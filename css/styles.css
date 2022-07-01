@@ -1,0 +1,344 @@
+html,
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box !important;
+    width: 100%;
+    height: 100%;
+    font-family: Nunito, sans-serif;
+}
+
+
+/* css font */
+@font-face {
+    font-family: "Nunito sans";
+    src: url(../nunito-font/NunitoSans-Regular.ttf);
+}
+
+/* css variables */
+:root {
+    --bg-color: rgb(248, 248, 248);
+    --primary-color: rgb(10, 10, 10);
+    --primary-color2: rgb(32, 105, 230);
+    --title-color: rgb(30, 30, 30);
+    --text-color: rgb(55, 55, 55);
+    --text-color2: rgb(44, 44, 44);
+    --text-color3: rgb(94, 94, 94);
+    --border-color: rgba(150, 150, 150, 0.289);
+    --shadow-color: 0px 10px 30px rgba(15, 15, 15, 0.541);
+    --box-shadow: 0px 10px 30px rgba(15, 15, 15, 0.205);
+}
+
+
+/* style navbar*/
+.fur {
+    color: var(--text-color);
+}
+
+.mx-1 {
+    margin: 0 .6rem;
+}
+
+img {
+    width: 100%;
+}
+
+.ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+:focus {
+    outline: none;
+}
+
+
+/* signup css */
+.signup {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%),
+						url(../img/signup-bg.jpg) no-repeat fixed center;
+	background-size: cover;
+    padding: 1rem 0;
+}
+
+.signup.login{
+	background: linear-gradient(45deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%),
+	url(../img/login-bg.jpg) no-repeat fixed center;
+	background-size: cover;
+}
+
+.sign {
+    width: 75rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.lag {
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lag img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.lag h2 {
+    color: white;
+    margin: 2rem 1rem;
+    letter-spacing: .2rem;
+}
+
+.form {
+    background-color: #fff;
+    padding: 3rem 3.5rem;
+    width: 32rem;
+    border-radius: .4rem;
+    box-shadow: var(--box-shadow);
+}
+
+.form h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: normal;
+    margin-top: 0;
+}
+
+.form h5 {
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--text-color3);
+}
+
+.form h5 a {
+    color: var(--primary-color2);
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+.form-group{
+    position: relative;
+}
+
+.form-group label {
+    font-size: .69rem;
+    color: var(--text-color3);
+    display: block;
+    margin-top: 1rem;
+}
+
+.form-group input {
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    width: 100%;
+    background-color: transparent;
+    font-size: 13px;
+}
+
+.form-group input:focus{
+    border-color: var(--primary-color2);
+}
+
+/* .form-group input:focus label{
+    color: var(--primary-color2) !important;
+} */
+
+.form-group span{
+    color: red;
+    font-size: 12px;
+}
+
+.form-group .check-box,
+.form-group .password-checker{
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    visibility: hidden;
+}
+
+.form-group .password-checker{
+   visibility: visible;
+}
+
+.form-group .check-box i{
+    color: green;
+}
+
+.signout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+.form-group select{
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    width: 100%;
+    background-color: transparent;
+    font-size: .9rem;
+}
+.form-group h6 {
+    margin-top: 1rem;
+    font-size: .8rem;
+    color: var(--text-color3);
+}
+
+.form-group h6 i{
+    color: var(--primary-color2) !important;
+}
+
+.calender {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.now h6 {
+    margin-top: 1.2rem;
+    font-size: .75rem;
+    line-height: 1.6;
+}
+
+.now h6 a {
+    font-size: .75rem;
+    font-weight: normal;
+    color: var(--primary-color2);
+}
+
+.now h6 input {
+    margin: .8rem 0;
+}
+
+.submit {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: end;
+}
+.submit button:hover{
+    background-color: rgb(4, 62, 149);
+}
+.submit button {
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    display: inline-block;
+    padding: .5rem 1rem;
+    background-color: var(--primary-color2);
+    color: white;
+    border-radius: 2rem;
+    border: none;
+}
+
+.doo img {
+    height: 1rem;
+    width: 1rem;
+    margin-left: 1rem;
+}
+
+.doo a {
+    font-size: .7rem;
+    color: white;
+    margin: 0 .3rem;
+}
+
+.lag1 {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.lag1 img {
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+.lag1 h2 {
+    font-size: 1.7rem;
+    margin: 0 .5rem;
+}
+
+@media screen and (max-width: 1070px){
+    .lag1{
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 1rem;
+        
+    }
+    .lag{
+        display: none;
+    }
+    .sign{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* login page */
+
+.form-group1{
+    margin: 3rem 0;
+}
+
+.form-group1 label {
+    font-size: .69rem;
+    color: var(--text-color3);
+    display: block;
+    margin-top: 1rem;
+}
+
+.form-group1 input {
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    width: 100%;
+    background-color: transparent;
+}
+
+.or{
+    display: flex;
+    flex-grow: 1;
+}
+.or div{
+    border-bottom: 1px solid var(--border-color);
+    width: 13rem;
+    margin-bottom: .7rem;
+}
+.or span{
+    margin: 0 1rem;
+}
+.conet{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.conet a{
+    display: block;
+    border: 2px solid var(--border-color);
+    margin: 1rem 0;
+    padding: 1.2rem 0;
+    border-radius: 2rem;
+}
+
+.facebook{
+    background-color: rgb(39, 74, 138);
+    color: white;
+}
+
+.apple{
+    background-color: #000000;
+    color: white;
+}
